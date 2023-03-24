@@ -14,7 +14,7 @@ const Footer = () => {
             icon={faFacebook}
           />
         </a>
-        <a href="https://github.com/aytullahdev/learning">
+        <a href="https://github.com/ArthiDa/Learner_eLearning_Client">
           <FontAwesomeIcon
             className="text-center font-bold text-[blue] text-5xl mx-5 ring ring-[blue] rounded-full bg-[white] socialIcon"
             icon={faGithub}
