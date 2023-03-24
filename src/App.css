@@ -1,0 +1,31 @@
+.swiper-slide {
+  display: flex;
+  justify-content: space-around;
+}
+.swiper-button-next {
+  right: 2px;
+  left: auto;
+}
+.swiper-button-prev {
+  left: 2px;
+  right: auto;
+}
+.review-des{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+ 
+
+.title-des{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.socialIcon:hover{
+  position:relative;
+  bottom: 5px;
+}
