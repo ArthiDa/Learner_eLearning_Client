@@ -1,5 +1,4 @@
 # [Learner](https://github.com/aytullahdev/learning) main repo.
-# [Learner](https://github.com/aytullahdev/learning) main repo.
 
 # Getting Started with Create React App
 
