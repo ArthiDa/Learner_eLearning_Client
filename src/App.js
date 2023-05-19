@@ -24,6 +24,7 @@ import Updatecourse from "./admin/Updatecourse";
 import EnrolCourses from "./User/EnrolCourses";
 import About from "./home/About";
 import ContactUs from "./home/ContactUs";
+import UpcomeCourses from "./home/UpcomeCourses";
 
 axios.interceptors.response.use(
   (res) => res,
@@ -54,6 +55,7 @@ function App() {
                 <Catagories />
                 <Crashcourses lim={6} />
                 <Statussection />
+                <UpcomeCourses />
                 <ReviewSlider />
                 <ContactUs />
               </>
