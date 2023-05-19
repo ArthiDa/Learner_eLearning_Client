@@ -3,10 +3,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import ReactDOM from "react-dom";
 import { faGithub, faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <div className="bg-[black]">
+      <Link to="/">
+        <div className="flex justify-center py-2">
+          <p className="text-4xl text-center lg:text-left font-bold text-white">
+            Lear<span className="text-five">ner</span>
+          </p>
+        </div>
+      </Link>
       <div className="text-center pt-5">
         <a href="">
           <FontAwesomeIcon
