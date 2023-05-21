@@ -50,7 +50,7 @@ const Contentupload = () => {
     };
     toast.promise(
     axios
-      .post("http://localhost:5556/api/users/upload", courseData, config)
+      .post("https://learner-elearning-server.onrender.com/api/users/upload", courseData, config)
       .then((res) => {
         if (res.data && res.data?._id) {
           toast.success("Course is inserted");

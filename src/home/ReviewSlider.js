@@ -14,7 +14,7 @@ import ReviewCard from "../card/ReviewCard";
 const ReviewSlider = () => {
   const [reviews, setReviews] = useState(null);
   useEffect(() => {
-    fetch("http://localhost:5556/api/users/getreviews")
+    fetch("https://learner-elearning-server.onrender.com/api/users/getreviews")
       .then((res) => res.json())
       .then((data) => {
         setReviews(data);

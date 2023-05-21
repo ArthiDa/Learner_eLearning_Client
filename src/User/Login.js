@@ -26,7 +26,7 @@ const Login = () => {
       toast.error("Please provide all data!");
       return;
     }
-    toast.promise( fetch("http://localhost:5556/api/users/login", {
+    toast.promise( fetch("https://learner-elearning-server.onrender.com/api/users/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(userData),

@@ -7,10 +7,10 @@ const SingleCatagory = () => {
   let { catagory } = useParams();
   const [courses, setCourses] = useState(null);
   const [cat, setCat] =  useState(catagory)
-  let link = `http://localhost:5556/api/users/catagories/${catagory}`;
+  let link = `https://learner-elearning-server.onrender.com/api/users/catagories/${catagory}`;
   if(catagory=='all'){
     catagory = "Available Courses"
-    link = `http://localhost:5556/api/users/getcourses`
+    link = `https://learner-elearning-server.onrender.com/api/users/getcourses`
   }
   useEffect(() => {
     if(catagory){

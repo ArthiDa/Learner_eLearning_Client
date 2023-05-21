@@ -23,7 +23,7 @@ const Profile = () => {
             },
           };
          toast.promise(axios
-            .post("http://localhost:5556/api/users/userupdate", {userdata:userUpdate}, config)
+            .post("https://learner-elearning-server.onrender.com/api/users/userupdate", {userdata:userUpdate}, config)
             .then((res) => {
               if (res.data) {
                 setUser((prev)=>({...prev,profession,img}));

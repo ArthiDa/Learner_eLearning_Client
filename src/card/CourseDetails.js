@@ -33,7 +33,7 @@ const CourseDetails = () => {
     };
     toast.promise(axios
       .post(
-        "http://localhost:5556/api/users/enroll",
+        "https://learner-elearning-server.onrender.com/api/users/enroll",
         { userID, courseID },
         config
       )
@@ -60,7 +60,7 @@ const CourseDetails = () => {
   }
 
   useEffect(() => {
-    fetch(`http://localhost:5556/api/users/course/${courseID}`)
+    fetch(`https://learner-elearning-server.onrender.com/api/users/course/${courseID}`)
       .then((res) => res.json())
       .then((data) => {
         if (data.message) {

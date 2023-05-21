@@ -32,7 +32,7 @@ const Updatecourse = () => {
       } = courseData;
       const { user } = useContext(ThemeContext);
       useEffect(()=>{
-        axios.get(`http://localhost:5556/api/users/course/${id}`).then((res)=>{
+        axios.get(`https://learner-elearning-server.onrender.com/api/users/course/${id}`).then((res)=>{
             if(res.data && res.data._id){
                 setCourseData(res.data);
                 
@@ -60,7 +60,7 @@ const Updatecourse = () => {
         };
         toast.promise(
         axios
-          .post("http://localhost:5556/api/users/updatecourse", courseData, config)
+          .post("https://learner-elearning-server.onrender.com/api/users/updatecourse", courseData, config)
           .then((res) => {
             if (res.data && res.data?._id) {
               toast.success("Course is upadted");

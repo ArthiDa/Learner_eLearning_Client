@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const Statussection = () => {
   const [status, setStatus] = useState(null);
   useEffect(() => {
-    fetch("http://localhost:5556/api/users/getstatus")
+    fetch("https://learner-elearning-server.onrender.com/api/users/getstatus")
       .then((response) => response.json())
       .then((data) => {
         setStatus(data);

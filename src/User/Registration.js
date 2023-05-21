@@ -36,7 +36,7 @@ const Registration = () => {
             toast.warning("Password doesn't match! ");
             return;
         }
-        fetch("http://localhost:5556/api/users/", {
+        fetch("https://learner-elearning-server.onrender.com/api/users/", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(userData),

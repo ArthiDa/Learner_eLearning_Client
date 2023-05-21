@@ -54,7 +54,7 @@ const SingleEnrollCourse = (props) => {
     };
     axios
       .post(
-        "http://localhost:5556/api/users/addreview",
+        "https://learner-elearning-server.onrender.com/api/users/addreview",
         {
           rating,
           review: text,
@@ -86,7 +86,7 @@ const SingleEnrollCourse = (props) => {
     toast.promise(
       axios
         .post(
-          "http://localhost:5556/api/users/updatereview",
+          "https://learner-elearning-server.onrender.com/api/users/updatereview",
           {
             rating,
             review: text,
@@ -116,7 +116,7 @@ const SingleEnrollCourse = (props) => {
     //console.log(props.id,config)
     axios
       .post(
-        "http://localhost:5556/api/users/reviewdelete",
+        "https://learner-elearning-server.onrender.com/api/users/reviewdelete",
         {
           courseID: props.id,
         },
@@ -142,7 +142,7 @@ const SingleEnrollCourse = (props) => {
     //console.log(props.id,config)
     axios
       .post(
-        "http://localhost:5556/api/users/getreview",
+        "https://learner-elearning-server.onrender.com/api/users/getreview",
         {
           courseid: props.id,
         },

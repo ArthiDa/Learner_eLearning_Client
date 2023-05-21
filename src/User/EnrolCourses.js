@@ -12,7 +12,7 @@ const EnrolCourses = () => {
       },
     };
     axios
-      .get("http://localhost:5556/api/users/getenrollcourse", config)
+      .get("https://learner-elearning-server.onrender.com/api/users/getenrollcourse", config)
       .then((res) => {
         if (res.data) {
           setCourses(res.data);
