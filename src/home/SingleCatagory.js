@@ -2,28 +2,29 @@ import { useParams } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import CoursesCard from "../card/CoursesCard";
 
-
 const SingleCatagory = () => {
-  let { catagory } = useParams();
+  let { catagory, search } = useParams();
   const [courses, setCourses] = useState(null);
-  const [cat, setCat] =  useState(catagory)
+  const [cat, setCat] = useState(catagory);
   let link = `https://learner-elearning-server.onrender.com/api/users/catagories/${catagory}`;
-  if(catagory=='all'){
-    catagory = "Available Courses"
-    link = `https://learner-elearning-server.onrender.com/api/users/getcourses`
+  if (catagory === "all") {
+    catagory = "Available Courses";
+    link = `https://learner-elearning-server.onrender.com/api/users/getcourses`;
+  }
+  if (catagory === "search") {
+    catagory = "Search result";
+    link = `https://learner-elearning-server.onrender.com/api/users/getcourses?search=${search}`;
   }
   useEffect(() => {
-    if(catagory){
-    fetch(link)
-      .then((response) => response.json())
-      .then((data) => {
-        setCourses(data);
-      });
-      return ()=>{
-
-      }
+    if (catagory) {
+      fetch(link)
+        .then((response) => response.json())
+        .then((data) => {
+          setCourses(data);
+        });
+      return () => {};
     }
-  }, []);
+  }, [search, catagory]);
   return (
     <div className="py-5">
       <h1 className="text-center font-bold text-5xl py-8 uppercase">

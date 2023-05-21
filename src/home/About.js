@@ -16,14 +16,8 @@ const About = () => {
               src="https://avatars.githubusercontent.com/u/58880826?v=4"
               alt=""
             />
+
             <div className="absolute inset-x-[110px] bottom-[-17px]">
-              <a href="https://www.facebook.com/profile.php?id=100045252939849">
-                <FontAwesomeIcon
-                  className="font-bold text-[blue] text-5xl mx-1 ring ring-[blue] rounded-full bg-[white] socialIcon"
-                  icon={faFacebook}
-                  href="google.com"
-                />
-              </a>
               <a href="https://github.com/aytullahdev">
                 <FontAwesomeIcon
                   className="font-bold text-[black] text-5xl mx-1 ring ring-[black] rounded-full bg-[white] socialIcon"
@@ -38,13 +32,8 @@ const About = () => {
               src="https://avatars.githubusercontent.com/u/90525298?v=4"
               alt=""
             />
+
             <div className="absolute inset-x-[110px] bottom-[-17px]">
-              <a href="https://www.facebook.com/arthi.barua.54/">
-                <FontAwesomeIcon
-                  className="font-bold text-[blue] text-5xl mx-1 ring ring-[blue] rounded-full bg-[white] socialIcon"
-                  icon={faFacebook}
-                />
-              </a>
               <a href="https://github.com/ArthiDa">
                 <FontAwesomeIcon
                   className="font-bold text-[black] text-5xl mx-1 ring ring-[black] rounded-full bg-[white] socialIcon"
@@ -56,17 +45,12 @@ const About = () => {
           <div className="relative">
             <img
               className="drop-shadow-md w-full rounded-full"
-              src="https://scontent.fcgp27-1.fna.fbcdn.net/v/t39.30808-6/271888220_3018028241792319_5839650459381959613_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHDk3H2Xx3gov9wTe42LrDDMQ9JTzwR53UxD0lPPBHndYmyv9BEt6Tp6OR1N6_VG--UKjgNWC63QC3_r7QL0lPU&_nc_ohc=xjVSh_tYX8cAX_vtewO&tn=NTjOQyB_FZ_9WnSz&_nc_ht=scontent.fcgp27-1.fna&oh=00_AfCFD7jqn58BWdSruKMtg6gUH4wy9sXjFE4dVo2IaKWXJg&oe=63B7928B"
+              src="https://avatars.githubusercontent.com/u/121741081?v=4"
               alt=""
             />
+
             <div className="absolute inset-x-[110px] bottom-[-17px]">
-              <a href="https://www.facebook.com/annoy.nayon">
-                <FontAwesomeIcon
-                  className="font-bold text-[blue] text-5xl mx-1 ring ring-[blue] rounded-full bg-[white] socialIcon"
-                  icon={faFacebook}
-                />
-              </a>
-              <a href="">
+              <a href="https://github.com/Syed-Mohiuzzaman24">
                 <FontAwesomeIcon
                   className="font-bold text-[black] text-5xl mx-1 ring ring-[black] rounded-full bg-[white] socialIcon"
                   icon={faGithub}
