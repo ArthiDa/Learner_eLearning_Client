@@ -247,11 +247,11 @@ const SingleEnrollCourse = (props) => {
           <h1 className="text-sm lg:text-3xl font-semibold ">{props.tittle}</h1>
           <p className="py-5 text-xl">Enrolled: {props.createdAt}</p>
         </div>
-        <div>
+        <div className="grid grid-cols-1">
           {!isReviewed && (
             <button
               onClick={openModal}
-              className="px-8 lg:px-20 py-2 bg-[#36b323] hover:bg-[#2e9d1d] text-[white] rounded"
+              className="px-8 lg:px-20 py-2 text-sm uppercase bg-[#36b323] hover:bg-[#2e9d1d] text-[white] rounded"
             >
               Add Review
             </button>
@@ -262,11 +262,18 @@ const SingleEnrollCourse = (props) => {
                 openModal();
                 getReview();
               }}
-              className="px-8 lg:px-20 py-2 bg-[#36b323] hover:bg-[#2e9d1d] text-[white] rounded"
+              className="px-8 lg:px-20 py-2 text-sm uppercase bg-[#36b323] hover:bg-[#2e9d1d] text-[white] rounded"
             >
               Update Review
             </button>
           )}
+          <a
+            href="https://github.com/aytullahdev/learning"
+            target="_blank"
+            className="px-8 block uppercase text-center text-sm lg:px-20 py-2 my-2 bg-[#de6426] hover:bg-[#145245] text-[white] rounded"
+          >
+            course materials
+          </a>
         </div>
       </div>
     </div>
